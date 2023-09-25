@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.DetallePelicula">
+
+
+    <TextView
+        android:id="@+id/tvtitulo"
+        android:layout_width="178dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="54dp"
+        android:layout_marginTop="41dp"
+        android:layout_marginEnd="179dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvduracion"
+        android:layout_width="179dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="51dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="181dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvtitulo" />
+
+    <TextView
+        android:id="@+id/tvdirector"
+        android:layout_width="178dp"
+        android:layout_height="66dp"
+        android:layout_marginStart="54dp"
+        android:layout_marginTop="42dp"
+        android:layout_marginEnd="179dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvduracion" />
+
+    <TextView
+        android:id="@+id/tvyear"
+        android:layout_width="181dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="51dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="179dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvdirector" />
+</androidx.constraintlayout.widget.ConstraintLayout>
