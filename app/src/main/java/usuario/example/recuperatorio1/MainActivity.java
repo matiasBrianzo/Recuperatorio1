@@ -43,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
         mAppBarConfiguration = new AppBarConfiguration.Builder(
-                R.id.nav_home, R.id.nav_gallery, R.id.nav_slideshow)
+                R.id.nav_home, R.id.nav_slideshow)
                 .setOpenableLayout(drawer)
                 .build();
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_main);
@@ -55,10 +55,6 @@ public class MainActivity extends AppCompatActivity {
                 switch(item.getItemId()){
                     case R.id.nav_home:
                         navController.navigate(R.id.nav_home);
-                        drawer.closeDrawers();
-                        return true;
-                    case R.id.nav_gallery:
-                        navController.navigate(R.id.nav_gallery);
                         drawer.closeDrawers();
                         return true;
                     case R.id.nav_slideshow:
